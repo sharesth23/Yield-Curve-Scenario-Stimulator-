@@ -8,3 +8,21 @@
 
 \begin{document}
 \maketitle
+
+\section{Introduction}
+Yield curve dynamics drive risk and PnL across fixed income portfolios.
+This paper presents a scenario-based framework to analyze curve shifts.
+
+\section{Methodology}
+We model parallel, steepening, flattening, and butterfly shocks calibrated
+using historical yield movements.
+
+\section{Risk Metrics}
+We compute duration, DV01, and convexity to approximate first- and second-order
+PnL impacts.
+
+\section{PnL Attribution}
+PnL is decomposed into level and curvature effects:
+\[
+\Delta P \approx DV01 \cdot \Delta y + \frac{1}{2} Convexity \cdot (\Delta y)^2
+\]
